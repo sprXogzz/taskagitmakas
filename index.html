@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Taş Kağıt Makas</title>
+  <link rel="stylesheet" href="tkm.css">
+</head>
+<body>
+  <h1>🪨📄✂️ Taş Kağıt Makas</h1>
+
+  <div id="startScreen" class="start-screen">
+    <h2>Kaç tur oynansın?</h2>
+    <div class="round-buttons">
+      <button onclick="selectRounds(3)">3 Tur</button>
+      <button onclick="selectRounds(5)">5 Tur</button>
+      <button onclick="selectRounds(7)">7 Tur</button>
+    </div>
+    <button id="startBtn" onclick="startGame()" disabled>▶️ Oyunu Başlat</button>
+  </div>
+
+  <div class="choices" id="choices" style="display:none;">
+    <button onclick="play('taş','🪨')">🪨 Taş</button>
+    <button onclick="play('kağıt','📄')">📄 Kağıt</button>
+    <button onclick="play('makas','✂️')">✂️ Makas</button>
+  </div>
+
+  <div class="choice-display" id="choiceDisplay"></div>
+  <div class="result" id="result"></div>
+  <div class="score" id="score"></div>
+
+  <button id="reset" onclick="resetGame()" style="display:none;">🔄 Resetle</button>
+
+  <script src="tkm.js"></script>
+
+<footer>
+  <div class="footer">
+    ©
+  By 2025 orahmetsevik
+  </div>
+</footer>
+
+</body>
+</html>
