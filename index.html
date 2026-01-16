@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Taş Kağıt Makas</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
   <link rel="stylesheet" href="tkm.css">
 </head>
 <body>
-  <h1>🪨📄✂️ Taş Kağıt Makas</h1>
+  
+  <button id="themeToggle" class="theme-toggle-btn" onclick="toggleTheme()">Gece Modu</button>
+
+  <h1>Taş Kağıt Makas</h1>
 
   <div id="startScreen" class="start-screen">
     <h2>Kaç tur oynansın?</h2>
@@ -15,7 +19,7 @@
       <button onclick="selectRounds(5)">5 Tur</button>
       <button onclick="selectRounds(7)">7 Tur</button>
     </div>
-    <button id="startBtn" onclick="startGame()" disabled>▶️ Oyunu Başlat</button>
+    <button id="startBtn" class="main-btn" onclick="startGame()" disabled>Oyunu Başlat</button>
   </div>
 
   <div class="choices" id="choices" style="display:none;">
@@ -28,16 +32,14 @@
   <div class="result" id="result"></div>
   <div class="score" id="score"></div>
 
-  <button id="reset" onclick="resetGame()" style="display:none;">🔄 Resetle</button>
+  <button id="reset" class="reset-btn" onclick="resetGame()" style="display:none;">Resetle</button>
 
   <script src="tkm.js"></script>
 
-<footer>
-  <div class="footer">
-    ©
-  By 2025 orahmetsevik
-  </div>
-</footer>
-
+  <footer>
+    <div class="footer">
+      © By 2025 orahmetsevik
+    </div>
+  </footer>
 </body>
 </html>
